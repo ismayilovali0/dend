@@ -33,4 +33,4 @@ def post_detail(request, pk):
         'previous_post': previous_post,
         'next_post': next_post,
     }
-    return render(request, 'blog/post_detail.html', context)
+    return render(request, 'post_detail.html', context)
