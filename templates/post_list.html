@@ -5,11 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog Postları</title>
-    <link rel="stylesheet" href="{% static 'css/posts.css' %}">
+    <link rel="stylesheet" href="{% static 'css/post_list.css' %}">
 </head>
 <body>
     <div class="container">
         <div class="header">
+            <a href="{% url 'blog:home_page' %}" class="back-button">← Ana Səhifə</a>
             <h1>📝 Blog Postları</h1>
             <p>Ən son paylaşımlarımız</p>
             {% if posts %}
@@ -27,7 +28,7 @@
                         
                         <div class="post-body"> <img src="{{ post.thumbnail.url }}" alt="{{ post.title }}" class="post-image">
                             
-                            <div class="post-info"> <h2 class="post-title">{{ post.title }}</h2>
+                            <div class="post-info"> <h2 class="post-title">{{ post.title }} </h2>
                                 
                                 <div class="post-content">
                                     {{ post.content|truncatechars:38 }}

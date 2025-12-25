@@ -1,4 +1,3 @@
-/* Rəng Paleti və Dəyişənlər */
 :root {
     --bright-green: #00E054;
     --vibrant-orange: #FF8000;
@@ -18,7 +17,7 @@
 
 body {
     background-color: var(--charcoal-black);
-    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    font-family: "Graphik", "Helvetica Neue", Helvetica, Arial, sans-serif;
     color: var(--silver-text);
     line-height: 1.6;
     display: flex;
@@ -31,7 +30,6 @@ body {
     width: 100%;
 }
 
-/* Əsas Kart Stili */
 .post-card {
     background-color: var(--dark-grey-blue);
     border: 1px solid var(--border-grey);
@@ -72,6 +70,7 @@ body {
     display: flex;
     flex-direction: column;
 }
+
 .status-badge {
     position: absolute;
     top: 20px;
@@ -85,14 +84,13 @@ body {
     box-shadow: 0 4px 10px rgba(0, 224, 84, 0.3);
 }
 
-/* Yazı Hissəsi */
 .post-body {
     padding: 40px;
 }
 
 .post-title {
     color: var(--white);
-    font-size: 2.2rem;
+    font-size: 48px;
     margin-bottom: 20px;
     line-height: 1.2;
 }
@@ -104,7 +102,6 @@ body {
     text-align: justify;
 }
 
-/* Link (Düymə) Stili */
 .cta-button {
     display: inline-block;
     background-color: transparent;
@@ -122,6 +119,7 @@ body {
     color: var(--charcoal-black);
     box-shadow: 0 0 15px rgba(64, 188, 244, 0.4);
 }
+
 .back-button {
     display: inline-block;
     background-color: transparent;
@@ -135,16 +133,17 @@ body {
     height: 60px;
     text-align: center;
 }
+
 .back-button:hover {
     transform: scale(1.05);    
     background: var(--bright-green);
     color: var(--charcoal-black);
     box-shadow: 0 6px 20px rgba(64, 188, 244, 0.4);
 }
-/* Mobil Uyğunluq */
+
 @media (max-width: 768px) {
     .post-card {
-        flex-direction: column; /* Mobil ekranlarda yenidən alt-alta olur */
+        flex-direction: column;
     }
     
     .post-header {
@@ -154,6 +153,6 @@ body {
     }
 
     .banner-wrapper {
-        height: 250px; /* Mobil üçün şəklin hündürlüyü */
+        height: 250px;
     }
 }

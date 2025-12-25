@@ -1,0 +1,10 @@
+--bright-green: #00E054;
+--vibrant-orange: #FF8000;
+--light-blue: #40BCF4;
+--charcoal-black: #14181C;
+--dark-grey-blue: #1A2028;
+--border-grey: #2C3440;
+--silver-text: #99AABB;
+--white: #FFFFFF;
+
+fonts

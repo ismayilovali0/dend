@@ -1,7 +1,3 @@
-/* ========================================
-   POSTS SƏHİFƏSİ - YENİ RƏNG PALETİ
-   ======================================== */
-
 :root {
     --bright-green: #00E054;
     --vibrant-orange: #FF8000;
@@ -20,9 +16,9 @@
 }
 
 body {
-    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
-    background-color: var(--charcoal-black); /* Əsas ümumi fon */
-    color: var(--silver-text); /* Gümüşü mətn */
+    font-family: "Graphik", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    background-color: var(--charcoal-black);
+    color: var(--silver-text); 
     min-height: 100vh;
     padding: 40px 20px;
 }
@@ -32,7 +28,6 @@ body {
     margin: 0 auto;
 }
 
-/* Header Hissəsi */
 .header {
     text-align: center;
     color: var(--white);
@@ -51,12 +46,11 @@ body {
     border-radius: 10px;
     padding: 15px 30px;
     display: inline-block;
-    color: var(--light-blue); /* Göy rəngli vurğu */
+    color: var(--light-blue); 
     font-size: 1.1em;
     margin-top: 15px;
 }
 
-/* Grid Sistemi */
 .posts-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
@@ -64,10 +58,9 @@ body {
     margin-top: 30px;
 }
 
-/* Post Kartı */
 .post-card {
-    background: var(--dark-grey-blue); /* Kontent bloklarının fonu */
-    border: 1px solid var(--border-grey); /* Sərhəd bozu */
+    background: var(--dark-grey-blue); 
+    border: 1px solid var(--border-grey);
     border-radius: 12px;
     padding: 30px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
@@ -76,7 +69,6 @@ body {
     overflow: hidden;
 }
 
-/* Kartın üstündəki rəngli xətt (Narıncıdan Yaşıla gradient) */
 .post-card::before {
     content: '';
     position: absolute;
@@ -99,7 +91,7 @@ body {
     right: 25px;
     font-size: 3em;
     font-weight: bold;
-    color: rgba(153, 170, 187, 0.05); /* Çox şəffaf gümüşü rəng */
+    color: rgba(153, 170, 187, 0.05);
 }
 
 .post-title {
@@ -128,7 +120,6 @@ body {
     opacity: 0.9;
 }
 
-/* "Daha çox" Düyməsi */
 .read-more {
     background: transparent;
     color: var(--bright-green);
@@ -147,7 +138,6 @@ body {
     box-shadow: 0 0 15px rgba(64, 188, 244, 0.3);
 }
 
-/* Boş Səhifə (No Posts) Stili */
 .no-posts {
     background: var(--dark-grey-blue);
     border: 1px solid var(--border-grey);
@@ -159,7 +149,7 @@ body {
 .no-posts-icon {
     font-size: 6em;
     margin-bottom: 25px;
-    color: var(--vibrant-orange); /* Diqqət çəkən narıncı */
+    color: var(--vibrant-orange);
 }
 
 .admin-link {
@@ -185,7 +175,30 @@ body {
     margin-bottom: 20px;
 }
 
-/* Mobil Uyğunluq */
+.back-button {
+    display: inline-flex;
+    margin-right: 1800px;
+    margin-left: 0;
+    background-color: transparent;
+    color: var(--bright-green);
+    text-decoration: none;
+    padding: 12px 12px;
+    border: 2px solid var(--bright-green);
+    border-radius: 6px;
+    font-weight: 600;
+    width: 120px;
+    height: 80px;
+    text-align: center;
+    align-items: center; 
+    justify-content: center;
+}
+
+.back-button:hover {
+    transform: scale(1.05);    
+    background: var(--bright-green);
+    color: var(--charcoal-black);
+}
+
 @media (max-width: 768px) {
     .posts-grid {
         grid-template-columns: 1fr;
